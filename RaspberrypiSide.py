@@ -26,7 +26,7 @@ import pyrebase
 
 # IFTTT Webhook key, available under "Documentation"
 # at  https://ifttt.com/maker_webhooks/.
-IFTTT_KEY = 'b-F4U7NhssgKf42FkeqKxdSLYC5zTdTa31AS46cxJ8D'
+IFTTT_KEY = ''
 
 # Create an instance of the IftttWebhook class,
 # passing the IFTTT Webhook key as parameter.
@@ -43,14 +43,14 @@ uart = serial.Serial("/dev/ttyS0", baudrate=57600, timeout=1)
 finger = adafruit_fingerprint.Adafruit_Fingerprint(uart)
 
 config = {
-  "apiKey": "AIzaSyBdEHEkGSN8GY28D09WkLsO13BsbGKZmGM",
-  "authDomain": "health-monitoring-system-f0abd.firebaseapp.com",
-  "databaseURL": "https://health-monitoring-system-f0abd-default-rtdb.firebaseio.com",
-  "projectId": "health-monitoring-system-f0abd",
-  "storageBucket": "health-monitoring-system-f0abd.appspot.com",
-  "messagingSenderId": "145240768776",
-  "appId": "1:145240768776:web:c31e640b2319fdbb986cbd",
-  "measurementId": "G-8CK2DJ436J"
+  "apiKey": "",
+  "authDomain": "",
+  "databaseURL": "",
+  "projectId": "",
+  "storageBucket": "",
+  "messagingSenderId": "",
+  "appId": "",
+  "measurementId": ""
 }
 
 firebase = pyrebase.initialize_app(config)
