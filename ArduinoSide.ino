@@ -122,7 +122,7 @@ void Pulse()
   if (millis() - tsLastReport > REPORTING_PERIOD_MS) {
     Serial.print("Heart rate:");
     Serial.print(pox.getHeartRate());
-    Serial.println("bpm")
+    Serial.println("bpm");
     tsLastReport = millis();
   }
   Serial.println("Pulse: " + p);
@@ -149,7 +149,7 @@ void SpO2()
   if (millis() - tsLastReport > REPORTING_PERIOD_MS) {
     Serial.print("SpO2: ");
     s = pox.getSpO2();
-    Serial.print(t);
+    Serial.print(s);
     Serial.println("%");
     tsLastReport = millis();
   }
