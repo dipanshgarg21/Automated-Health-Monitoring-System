@@ -17,10 +17,10 @@ uint32_t tsLastReport = 0;
 
 DallasTemperature sensors(&oneWire);
 
-#define FIREBASE_HOST "health-monitoring-system-f0abd-default-rtdb.firebaseio.com"
-#define FIREBASE_AUTH "IVhLXXD3b6gbkFDWNKO77YeXozDOFxJQDUmASbXJ"
-#define WIFI_SSID "SlowWiFi"
-#define WIFI_PASSWORD "connectnow21"
+#define FIREBASE_HOST ""
+#define FIREBASE_AUTH ""
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
 
 FirebaseData firebaseData1, firebaseData2, firebaseData3;
 
